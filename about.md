@@ -28,7 +28,7 @@ permalink: /about/
 
   <h2>Repositories</h2>
   <ul>
-    <li><a href="https://github.com/tunedinn/intune-remediations" target="_blank" rel="noopener">tunedinn/intune-remediations</a> — Detect &amp; Remediate scripts</li>
-    <li><a href="https://github.com/tunedinn/intune-scripts" target="_blank" rel="noopener">tunedinn/intune-scripts</a> — General Intune, Win32, and Graph API scripts</li>
+    <li><span class="riddler-inline">?</span> <strong>intune-remediations</strong> — Detect &amp; Remediate scripts <em>(Under construction)</em></li>
+    <li><span class="riddler-inline">?</span> <strong>intune-scripts</strong> — General Intune, Win32, and Graph API scripts <em>(Under construction)</em></li>
   </ul>
 </div>
