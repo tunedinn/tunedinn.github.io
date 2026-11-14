@@ -25,10 +25,4 @@ permalink: /about/
     <li><strong>TunedInn Guides</strong> — Plain-English breakdowns explaining the <em>why</em> and <em>how</em> behind every tool.</li>
     <li><strong>YouTube Walkthroughs</strong> — Embedded video demos so you can see each solution in action before deploying it.</li>
   </ul>
-
-  <h2>Repositories</h2>
-  <ul>
-    <li><span class="riddler-inline">?</span> <strong>intune-remediations</strong> — Detect &amp; Remediate scripts <em>(Under construction)</em></li>
-    <li><span class="riddler-inline">?</span> <strong>intune-scripts</strong> — General Intune, Win32, and Graph API scripts <em>(Under construction)</em></li>
-  </ul>
 </div>

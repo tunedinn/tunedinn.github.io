@@ -383,87 +383,37 @@ a:hover {
   font-size: 0.92rem;
 }
 
-.card-top {
-  display: flex;
-  align-items: center;
+.card-mystery {
+  min-height: 150px;
   justify-content: space-between;
-  margin-bottom: 0.45rem;
-}
-
-.card-top .card-num {
-  margin-bottom: 0;
-}
-
-.card-locked {
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--surface),
-    var(--surface) 10px,
-    var(--bg-alt) 10px,
-    var(--bg-alt) 20px
-  );
+  background: var(--bg-alt);
   border-style: dashed;
   box-shadow: none;
   cursor: default;
 }
 
-.card-locked:hover {
+.card-mystery:hover {
   transform: none;
   box-shadow: none;
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--surface),
-    var(--surface) 10px,
-    var(--bg-alt) 10px,
-    var(--bg-alt) 20px
-  );
+  background: var(--bg-alt);
 }
 
-.riddler-badge {
+.riddler-mark {
+  align-self: center;
+  margin: auto 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 7px;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
   background: var(--terminal-bg);
   color: var(--crt-cyan);
   border: 2px solid var(--border-strong);
+  box-shadow: 3px 3px 0 var(--ink);
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-weight: 700;
-  font-size: 1rem;
-  box-shadow: 2px 2px 0 var(--ink);
-}
-
-.card-status {
-  display: inline-block;
-  margin-top: 0.85rem;
-  align-self: flex-start;
-  font-family: "JetBrains Mono", ui-monospace, monospace;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: var(--accent-hover);
-  background: var(--accent-soft);
-  border: 1px solid rgba(200, 90, 40, 0.35);
-  padding: 0.18rem 0.5rem;
-  border-radius: 5px;
-}
-
-.riddler-inline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 5px;
-  background: var(--terminal-bg);
-  color: var(--crt-cyan);
-  font-family: "JetBrains Mono", ui-monospace, monospace;
-  font-weight: 700;
-  font-size: 0.82rem;
-  margin-right: 0.35rem;
-  vertical-align: middle;
+  font-size: 1.85rem;
 }
 
 /* Post List */
