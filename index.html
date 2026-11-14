@@ -3,40 +3,72 @@ layout: default
 title: Home
 ---
 <section class="hero">
-  <span class="hero-eyebrow">Welcome to TunedInn</span>
-  <h1>Pull up a chair. Let's tame Intune together.</h1>
-  <p>
-    Practical PowerShell scripts, Proactive Remediations, Autopilot workflows, and step-by-step
-    video walkthroughs—built for everyone from Help Desk technicians to Senior Endpoint Engineers.
-  </p>
-  <div class="hero-actions">
-    <a class="btn btn-primary" href="{{ '/guides/' | relative_url }}">Browse Guides</a>
-    <a class="btn btn-secondary" href="https://github.com/tunedinn/intune-remediations" target="_blank" rel="noopener">Remediations Repo</a>
-    <a class="btn btn-secondary" href="https://github.com/tunedinn/intune-scripts" target="_blank" rel="noopener">Scripts Repo</a>
+  <div class="hero-copy">
+    <span class="hero-eyebrow">WORKSHOP // INTUNE &amp; AUTOPILOT</span>
+    <h1>Pull up a chair. Let's tame Intune together.</h1>
+    <p>
+      Practical PowerShell scripts, Proactive Remediations, Autopilot workflows, and step-by-step
+      video walkthroughs—built for everyone from Help Desk technicians to Senior Endpoint Engineers.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/guides/' | relative_url }}">Browse Guides</a>
+      <a class="btn btn-secondary" href="https://github.com/tunedinn/intune-remediations" target="_blank" rel="noopener">Remediations Repo</a>
+      <a class="btn btn-secondary" href="https://github.com/tunedinn/intune-scripts" target="_blank" rel="noopener">Scripts Repo</a>
+    </div>
+  </div>
+
+  <div class="hero-mascot">
+    <div class="crt-frame">
+      <div class="crt-topbar">
+        <div class="crt-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="crt-title">tunedinn_bot.exe</span>
+      </div>
+      <div class="crt-screen">
+        <img src="{{ '/assets/img/tunedinn-bot.jpg' | relative_url }}" alt="TunedInn Robot in a blue hoodie working on a laptop beside a terminal coffee mug" width="420" height="420">
+      </div>
+      <div class="crt-caption">
+        <span class="crt-prompt">&gt;_</span>
+        <span>Brewing scripts &amp; taming endpoints.</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<h2 class="section-title">Explore the Inn</h2>
+<div class="section-header">
+  <h2 class="section-title">Explore the Workshop</h2>
+  <span class="section-tag">FIELD MANUALS &amp; REPOS</span>
+</div>
+
 <div class="grid">
   <a class="card" href="https://github.com/tunedinn/intune-remediations" target="_blank" rel="noopener">
+    <span class="card-num">01</span>
     <h3>Proactive Remediations</h3>
     <p>Detect &amp; Remediate scripts with real-world admin use cases and Intune deployment notes.</p>
   </a>
   <a class="card" href="https://github.com/tunedinn/intune-scripts" target="_blank" rel="noopener">
+    <span class="card-num">02</span>
     <h3>Intune &amp; Graph Scripts</h3>
     <p>Win32 packaging helpers, Graph API automation, and endpoint troubleshooting tools.</p>
   </a>
   <a class="card" href="{{ '/guides/' | relative_url }}">
+    <span class="card-num">03</span>
     <h3>Autopilot &amp; OOBE</h3>
     <p>Enrollment workflows, diagnostics, and deployment guides from start to finish.</p>
   </a>
   <a class="card" href="{{ '/guides/' | relative_url }}">
+    <span class="card-num">04</span>
     <h3>Help Desk Basics</h3>
     <p>Clear, approachable walkthroughs for Tier 1/2 support leveling up in Intune.</p>
   </a>
 </div>
 
-<h2 class="section-title">Latest Guides</h2>
+<div class="section-header">
+  <h2 class="section-title">Latest Guides</h2>
+  <a class="section-link" href="{{ '/guides/' | relative_url }}">View all &rarr;</a>
+</div>
+
 <div class="post-list">
   {% for post in site.posts limit:5 %}
   <article class="post-item">
