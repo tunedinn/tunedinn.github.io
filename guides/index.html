@@ -1,0 +1,21 @@
+---
+layout: default
+title: Guides
+permalink: /guides/
+---
+<h1>All Guides &amp; Walkthroughs</h1>
+<p class="post-subtitle">Every script, remediation, and video walkthrough published at TunedInn.</p>
+
+<div class="post-list">
+  {% for post in site.posts %}
+  <article class="post-item">
+    <div class="post-meta">
+      <span class="badge">{{ post.category | default: "Guide" }}</span>
+      {% if post.audience %}<span class="badge badge-muted">{{ post.audience }}</span>{% endif %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    </div>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 32 }}</p>
+  </article>
+  {% endfor %}
+</div>

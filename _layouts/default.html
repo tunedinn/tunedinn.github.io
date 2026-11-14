@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <svg class="lantern-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 4h6"/>
+          <path d="M10 4v2h4V4"/>
+          <path d="M7 8a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8z"/>
+          <path d="M12 10v4"/>
+          <path d="M10 12h4"/>
+          <path d="M8 18h8"/>
+          <path d="M6 20h12"/>
+        </svg>
+        <span>Tuned<strong>Inn</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/guides/' | relative_url }}">Guides</a>
+        <a href="https://github.com/tunedinn/intune-remediations" target="_blank" rel="noopener">Remediations</a>
+        <a href="https://github.com/tunedinn/intune-scripts" target="_blank" rel="noopener">Scripts</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>TunedInn</strong> — Practical Intune, Autopilot &amp; Scripting resources for Help Desk to Senior Admins.</p>
+      <div class="footer-links">
+        <a href="https://github.com/tunedinn" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ '/guides/' | relative_url }}">All Guides</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

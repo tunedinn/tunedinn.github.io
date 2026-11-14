@@ -1,0 +1,10 @@
+title: TunedInn
+description: A welcoming hub for Intune, Autopilot, PowerShell scripts, remediations, and IT admin walkthroughs.
+url: "https://tunedinn.github.io"
+baseurl: ""
+permalink: /guides/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+github_username: tunedinn
+youtube_url: "https://www.youtube.com"

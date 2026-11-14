@@ -1,0 +1,52 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <span class="hero-eyebrow">Welcome to TunedInn</span>
+  <h1>Pull up a chair. Let's tame Intune together.</h1>
+  <p>
+    Practical PowerShell scripts, Proactive Remediations, Autopilot workflows, and step-by-step
+    video walkthroughs—built for everyone from Help Desk technicians to Senior Endpoint Engineers.
+  </p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="{{ '/guides/' | relative_url }}">Browse Guides</a>
+    <a class="btn btn-secondary" href="https://github.com/tunedinn/intune-remediations" target="_blank" rel="noopener">Remediations Repo</a>
+    <a class="btn btn-secondary" href="https://github.com/tunedinn/intune-scripts" target="_blank" rel="noopener">Scripts Repo</a>
+  </div>
+</section>
+
+<h2 class="section-title">Explore the Inn</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/tunedinn/intune-remediations" target="_blank" rel="noopener">
+    <h3>Proactive Remediations</h3>
+    <p>Detect &amp; Remediate scripts with real-world admin use cases and Intune deployment notes.</p>
+  </a>
+  <a class="card" href="https://github.com/tunedinn/intune-scripts" target="_blank" rel="noopener">
+    <h3>Intune &amp; Graph Scripts</h3>
+    <p>Win32 packaging helpers, Graph API automation, and endpoint troubleshooting tools.</p>
+  </a>
+  <a class="card" href="{{ '/guides/' | relative_url }}">
+    <h3>Autopilot &amp; OOBE</h3>
+    <p>Enrollment workflows, diagnostics, and deployment guides from start to finish.</p>
+  </a>
+  <a class="card" href="{{ '/guides/' | relative_url }}">
+    <h3>Help Desk Basics</h3>
+    <p>Clear, approachable walkthroughs for Tier 1/2 support leveling up in Intune.</p>
+  </a>
+</div>
+
+<h2 class="section-title">Latest Guides</h2>
+<div class="post-list">
+  {% for post in site.posts limit:5 %}
+  <article class="post-item">
+    <div class="post-meta">
+      <span class="badge">{{ post.category | default: "Guide" }}</span>
+      {% if post.audience %}<span class="badge badge-muted">{{ post.audience }}</span>{% endif %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    </div>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}</p>
+  </article>
+  {% endfor %}
+</div>
