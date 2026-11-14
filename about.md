@@ -8,9 +8,9 @@ permalink: /about/
     <span class="hero-eyebrow">ABOUT THE WORKSHOP</span>
     <h1>About TunedInn</h1>
     <p>
-      <strong>TunedInn</strong> is a community-focused resource hub for Microsoft Intune, Windows Autopilot,
-      and endpoint automation. Whether you're on the Help Desk troubleshooting your first enrolled laptop
-      or a Senior Admin automating Graph API workflows, you're welcome here.
+      <strong>TunedInn</strong> is my workshop for building and sharing Microsoft Intune, Autopilot,
+      and PowerShell tools I think will benefit the community. As new ideas come up, I'll drop the
+      code into the repos and add new guides and pages here as we go.
     </p>
   </div>
   <div class="about-mascot">
