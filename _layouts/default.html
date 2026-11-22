@@ -8,7 +8,7 @@
   <link rel="icon" type="image/jpeg" href="{{ '/assets/img/tunedinn-bot.jpg' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
   <script>
     (function() {
@@ -23,14 +23,17 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="{{ '/' | relative_url }}">
-        <img class="brand-avatar" src="{{ '/assets/img/tunedinn-bot.jpg' | relative_url }}" alt="TunedInn Robot Mascot" width="36" height="36">
-        <span class="brand-name">Tuned<strong>Inn</strong></span>
+        <img class="brand-avatar" src="{{ '/assets/img/tunedinn-bot.jpg' | relative_url }}" alt="TunedInn Innkeeper Mascot" width="38" height="38">
+        <span class="brand-text">
+          <span class="brand-name">Tuned<strong>Inn</strong></span>
+          <span class="brand-sub">EST. 2026 &bull; INTUNE TAVERN</span>
+        </span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/guides/' | relative_url }}">Guides</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <a href="{{ '/' | relative_url }}">The Inn</a>
+        <a href="{{ '/guides/' | relative_url }}">The Ledger</a>
+        <a href="{{ '/about/' | relative_url }}">Innkeeper</a>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle lantern mode" title="Toggle theme">
           <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -57,13 +60,13 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img class="footer-avatar" src="{{ '/assets/img/tunedinn-bot.jpg' | relative_url }}" alt="" width="28" height="28" aria-hidden="true">
-        <p><strong>TunedInn</strong> — Cozy workshop for Intune, Autopilot &amp; PowerShell resources.</p>
+        <img class="footer-avatar" src="{{ '/assets/img/tunedinn-bot.jpg' | relative_url }}" alt="" width="30" height="30" aria-hidden="true">
+        <p><strong>TunedInn</strong> — Pull up a chair by the hearth for Intune, Autopilot &amp; PowerShell.</p>
       </div>
       <div class="footer-links">
         <a href="https://github.com/tunedinn" target="_blank" rel="noopener">GitHub</a>
-        <a href="{{ '/guides/' | relative_url }}">All Guides</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/guides/' | relative_url }}">The Ledger</a>
+        <a href="{{ '/about/' | relative_url }}">Innkeeper</a>
       </div>
     </div>
   </footer>
@@ -76,8 +79,8 @@
       function syncButton(theme) {
         var isDark = theme === 'dark';
         btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
-        btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-        btn.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        btn.setAttribute('aria-label', isDark ? 'Switch to morning hearth mode' : 'Switch to lantern night mode');
+        btn.setAttribute('title', isDark ? 'Switch to morning hearth mode' : 'Switch to lantern night mode');
       }
 
       syncButton(document.documentElement.getAttribute('data-theme') || 'light');

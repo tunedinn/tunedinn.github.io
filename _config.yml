@@ -1,5 +1,5 @@
 title: TunedInn
-description: A welcoming hub for Intune, Autopilot, PowerShell scripts, remediations, and IT admin walkthroughs.
+description: A cozy roadside inn for Intune, Autopilot, PowerShell scripts, remediations, and IT admin walkthroughs.
 url: "https://tunedinn.github.io"
 baseurl: ""
 permalink: /guides/:year/:month/:day/:title/
